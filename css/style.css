@@ -1,0 +1,106 @@
+ *{
+	padding: 0;
+	margin: 0;
+	border: 0;
+} 
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+
+
+body {
+	background: url(../img/h.jpg);
+}
+
+
+img {
+	margin: auto;
+	margin-top: 30px;
+    width: 30%; 
+    height: auto; 
+	display: block;
+	border-radius: 30px;
+	object-fit: cover;
+}
+
+.buttons{
+	position: fixed;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: glow 1s infinite alternate;
+    margin-top: 15%; 
+}
+button {
+	position: relative;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: rgb(255, 158, 146);
+}
+
+.buttons #yes{
+	padding: 15px;
+	margin-right: 10px;
+	animation: pulse-color 1s infinite alternate;
+}
+
+.buttons #no{
+	padding: 15px 18px 15px 18px;
+	margin-left: 10px;
+}
+
+@keyframes pulse-color {
+    from {
+        background-color: rgb(255, 158, 146);
+    }
+    to {
+        background-color: #ff6347;
+    }
+}
+
+.text{
+	font-size: 30px;
+	color: #963423;
+	position: fixed;
+	margin-top: 10%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+	animation: glow 1s infinite alternate;
+}
+
+
+@keyframes glow {
+    0% { text-shadow: 0 0 1px rgb(255, 142, 152), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 6px rgb(255, 142, 152), 0 0 7px rgb(255, 255, 255); }
+    100% { text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255), 0 0 3px rgb(255, 142, 152), 0 0 4px rgbrgb(250, 157, 157), 0 0 5px rgb(255, 142, 152), 0 0 6px rgb(255, 142, 152), 0 0 7px rgb(255, 142, 152); }
+}
+
